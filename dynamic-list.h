@@ -34,5 +34,5 @@ s_dynamic_list<R> *pub_dynamic_list_transform(s_dynamic_list<T> *self,  R (*mapp
 template<typename T,typename R>
 R* pub_dynamic_list_reduce(s_dynamic_list<T> *self,  R* (*reducer)(R accumulator,T value, int index, T *array), R* initial_value );
 
-#include "dynamic-list.c"
+#include "dynamic-list.cpp"
 #endif
